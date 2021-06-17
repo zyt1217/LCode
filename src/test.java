@@ -7,7 +7,16 @@ public class test {
 //        test t = new test();
 //        int a = t.lengthOfLongestSubstring(s);
 //        System.out.println(t.lengthOfLongestSubstring(s));
-        System.out.println(brackets(""));
+//        System.out.println(brackets(""));
+
+        Random rand = new Random(104567);
+        double x = 0.4;
+        for(int i = 0;i<10;i++){
+            double a =35.80  -x+2*x*(0.01*rand.nextInt(100));
+            System.out.println(a);
+        }
+
+
     }
 
     public int lengthOfLongestSubstring(String s) {
