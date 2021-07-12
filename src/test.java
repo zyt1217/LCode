@@ -9,13 +9,14 @@ public class test {
 //        System.out.println(t.lengthOfLongestSubstring(s));
 //        System.out.println(brackets(""));
 
-        Random rand = new Random(104567);
-        double x = 0.4;
-        for(int i = 0;i<10;i++){
-            double a =35.80  -x+2*x*(0.01*rand.nextInt(100));
-            System.out.println(a);
-        }
-
+//        Random rand = new Random(104567);
+//        double x = 0.4;
+//        for(int i = 0;i<10;i++){
+//            double a =35.80  -x+2*x*(0.01*rand.nextInt(100));
+//            System.out.println(a);
+//        }
+        String s = "1234567";
+        System.out.print(s.substring(7,8));
 
     }
 
