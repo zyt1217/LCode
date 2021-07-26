@@ -19,19 +19,12 @@ public class IsBranch {
     public static boolean IsBranch(TreeNode root, int[] arr, int length){
 
         HashSet<Integer> arrayList = new HashSet<>();
-        for(int i=0;i<length;i++){
+        for(int i=0;i<length;i++)
             arrayList.add(arr[i]);
-        }
         int re = IsBranch1(root,arrayList,length);
-        if(re==2){
+        if(re==2)
             return true;
-        }
-
         return false;
-
-
-
-
     }
 
 
@@ -40,37 +33,27 @@ public class IsBranch {
 //        for(int i=0;i<length;i++){
 //            hashset.add(arr[i]);
 //        }
-        int tf =0;
-        int l=1;
-        int r =1;
+        int tf = 0, l = 1, r = 1;
 
         if(arr.contains(root.val)){
             tf=1;
             arr.remove(root.val);
         }
 
-        if(root.left != null) {
+        if(root.left != null)
             l = IsBranch1(root.left,arr,length);
-        }
-        if(root.right != null){
+        if(root.right != null)
             r= IsBranch1(root.right,arr,length);
-        }
         if(arr.contains(root.val)){
             tf=1;
             arr.remove(root.val);
         }
-        if ((l==1 || r==1) && arr.isEmpty() || l==2 || r==2){
+        if ((l==1 || r==1) && arr.isEmpty() || l==2 || r==2)
             return 2;
-        }
 
         if (tf==1 && (l==1||r==1)) return 1;
 
-
-
-
-
         return 0;
-
     }
 
 }
