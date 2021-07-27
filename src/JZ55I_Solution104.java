@@ -7,11 +7,9 @@ public class JZ55I_Solution104 {
             return maxDepth1(root.left)+1;
         if(root.right!=null && root.left==null)
             return maxDepth1(root.right)+1;
-        if(root.right==null && root.left==null)
+        if(root.right == null)
             return 1;
-        if(root.right!=null && root.left!=null)
-            return Math.max(maxDepth1(root.left),maxDepth1(root.right))+1;
-        return 0;
+        return Math.max(maxDepth1(root.left),maxDepth1(root.right))+1;
     }
 
     public int maxDepth(TreeNode root) {
