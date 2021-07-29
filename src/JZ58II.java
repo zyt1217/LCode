@@ -17,4 +17,9 @@ public class JZ58II {
         }
         return new String(newchars);
     }
+
+    public static String reverseLeftWords1(String s, int n) {
+        return s.substring(n) + s.substring(0,n);
+    }
+
 }
