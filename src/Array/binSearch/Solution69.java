@@ -1,3 +1,5 @@
+package Array.binSearch;
+
 public class Solution69 {
     public int mySqrt(int x) {
         int res = 0;

@@ -1,3 +1,5 @@
+package Array.binSearch;
+
 import java.util.Arrays;
 
 public class JZ53I_Solution34 {
@@ -20,9 +22,9 @@ public class JZ53I_Solution34 {
     public static int binSearch(int[] nums, int l, int r, int target){
         if(l > r)
             return -1;
-        int mid = nums[(l + r)/2];
+        int mid = nums[(l + r)>>1];
         if(target == mid)
-            return (l + r)/2;
+            return (l + r)>>1;
         else if(target > mid){
             return binSearch(nums, (l + r)/2+1, r, target);
         }else {
