@@ -1,4 +1,4 @@
-package Array.deleteElement;
+package Array.deleteElement_doubleIndex;
 
 public class Solution283 {
     //移动0

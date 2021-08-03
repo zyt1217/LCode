@@ -1,6 +1,4 @@
-package Array.deleteElement;
-
-import java.util.Arrays;
+package Array.deleteElement_doubleIndex;
 
 public class Solution844 {
     public static void main(String[] args){
