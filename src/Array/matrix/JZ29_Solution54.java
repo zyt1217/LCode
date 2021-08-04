@@ -1,3 +1,5 @@
+package Array.matrix;
+
 import java.util.*;
 
 public class JZ29_Solution54 {
