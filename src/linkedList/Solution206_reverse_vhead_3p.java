@@ -1,8 +1,9 @@
-package linkedList.reverse;
-import linkedList.ListNode;
+package linkedList;
+import preDefine.ListNode;
 
-public class Solution206 {
+public class Solution206_reverse_vhead_3p {
     public ListNode reverseList(ListNode head) {
+        //三指针 虚拟头节点
         if(head == null || head.next == null)
             return head;
         ListNode vhead = new ListNode();

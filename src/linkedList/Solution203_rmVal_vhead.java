@@ -1,9 +1,9 @@
-package linkedList.virtualHead;
+package linkedList;
 
 
-import linkedList.ListNode;
+import preDefine.ListNode;
 
-public class Solution203 {
+public class Solution203_rmVal_vhead {
     public ListNode removeElements(ListNode head, int val) {
         if(head == null)
             return head;

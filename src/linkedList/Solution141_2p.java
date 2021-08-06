@@ -1,4 +1,8 @@
-public class Solution141 {
+package linkedList;
+
+import preDefine.ListNode;
+
+public class Solution141_2p {
     public boolean hasCycle(ListNode head) {
         ListNode p1 = head;
         ListNode p2 = head.next;

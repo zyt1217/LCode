@@ -1,3 +1,7 @@
+package linkedList;
+
+import preDefine.ListNode;
+
 public class JZ52_Solution160 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode pA = headA, pB = headB;

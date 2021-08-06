@@ -1,11 +1,13 @@
+import preDefine.TreeNode;
+
 import java.util.ArrayList;
 class t{
     public static void main(String[] args){
         JZ54 j = new JZ54();
         TreeNode root = new TreeNode();
-//        root.right = new TreeNode(4);
-//        root.left = new TreeNode(1);
-//        root.left.right = new TreeNode(2);
+//        root.right = new preDefine.TreeNode(4);
+//        root.left = new preDefine.TreeNode(1);
+//        root.left.right = new preDefine.TreeNode(2);
         System.out.print(j.kthLargest_0726(root, 1));
     }
 

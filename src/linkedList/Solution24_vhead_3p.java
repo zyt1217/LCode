@@ -1,7 +1,10 @@
 package linkedList;
 
-public class Solution24 {
+import preDefine.ListNode;
+
+public class Solution24_vhead_3p {
     public ListNode swapPairs(ListNode head) {
+        //三指针 虚拟头节点
         if(head == null || head.next == null)
             return head;
         ListNode vhead = new ListNode();

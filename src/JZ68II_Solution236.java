@@ -1,5 +1,6 @@
+import preDefine.TreeNode;
+
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class JZ68II_Solution236 {

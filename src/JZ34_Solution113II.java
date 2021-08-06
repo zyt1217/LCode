@@ -1,3 +1,6 @@
+import preDefine.Tree;
+import preDefine.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +12,7 @@ public class JZ34_Solution113II {
         return path_Sum(root,target,listAll,list);
     }
 
-    public static List<List<Integer>> path_Sum(TreeNode root,int sum, List<List<Integer>> listAll, List<Integer> list){//所有路径，不包含null节点的
+    public static List<List<Integer>> path_Sum(TreeNode root, int sum, List<List<Integer>> listAll, List<Integer> list){//所有路径，不包含null节点的
         if(root == null)
             return listAll;
         list.add(root.val);

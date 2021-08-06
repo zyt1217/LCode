@@ -1,3 +1,5 @@
+import preDefine.TreeNode;
+
 public class JZ07_Solution105 {
 
     public static void main(String[] args){
@@ -29,8 +31,8 @@ public class JZ07_Solution105 {
         System.arraycopy(preorder,1,preorderL,0,i);
         System.arraycopy(preorder,1+i,preorderR,0,l-i-1);
 
-//        root.left = new TreeNode();
-//        root.right = new TreeNode();
+//        root.left = new preDefine.TreeNode();
+//        root.right = new preDefine.TreeNode();
 
         root.left = buildTree(preorderL,inorderL);
         root.right = buildTree(preorderR,inorderR);

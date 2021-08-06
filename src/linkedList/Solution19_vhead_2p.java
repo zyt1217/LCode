@@ -1,7 +1,10 @@
 package linkedList;
 
-public class Solution19 {
+import preDefine.ListNode;
+
+public class Solution19_vhead_2p {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        //双指针
         ListNode Node1 = head;
         ListNode Node2 = head;
         for(int i = 0; i< n;i++)
@@ -16,16 +19,15 @@ public class Solution19 {
         Node2.next = temp.next;
         temp.next = null;
         return head;
-
     }
 }
 /*
   Definition for singly-linked list.
-  public class ListNode {
+  public class preDefine.ListNode {
       int val;
-      ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+      preDefine.ListNode next;
+      preDefine.ListNode() {}
+      preDefine.ListNode(int val) { this.val = val; }
+      preDefine.ListNode(int val, preDefine.ListNode next) { this.val = val; this.next = next; }
   }
  */

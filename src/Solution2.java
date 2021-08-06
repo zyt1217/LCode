@@ -1,5 +1,7 @@
+import preDefine.ListNode;
+
 public class Solution2 {
-    //public ListNode temp = new ListNode();
+    //public preDefine.ListNode temp = new preDefine.ListNode();
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return add(l1,l2,0);

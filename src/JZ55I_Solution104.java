@@ -1,3 +1,5 @@
+import preDefine.TreeNode;
+
 public class JZ55I_Solution104 {
 
     public int maxDepth1(TreeNode root) {

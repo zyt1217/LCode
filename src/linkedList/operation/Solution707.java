@@ -1,6 +1,6 @@
 package linkedList.operation;
 
-import linkedList.ListNode;
+import preDefine.ListNode;
 
 public class Solution707 {
     public static void main(String[] args){
@@ -19,7 +19,7 @@ class MyLinkedList {
     ListNode root;
     /** Initialize your data structure here. */
     public MyLinkedList() {
-        //root = new ListNode();
+        //root = new preDefine.ListNode();
     }
 
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */

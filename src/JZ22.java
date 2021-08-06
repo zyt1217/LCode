@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import preDefine.ListNode;
 
 public class JZ22 {
     int i = 0;

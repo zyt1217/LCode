@@ -1,6 +1,7 @@
-import java.util.Arrays;
+import preDefine.TreeNode;
+
 import java.util.HashSet;
-import java.util.ArrayList;
+
 public class IsBranch {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

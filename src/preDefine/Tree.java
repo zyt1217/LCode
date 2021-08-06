@@ -1,6 +1,8 @@
+package preDefine;
+
 public class Tree extends TreeNode{
     public TreeNode root = new TreeNode();
-    Tree(){
+    public Tree(){
         root.val = 5;
         root.left = new TreeNode(4);
         root.right = new TreeNode(8);

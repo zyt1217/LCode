@@ -1,3 +1,5 @@
+import preDefine.TreeNode;
+
 public class JZ55II_Solution110 {
     public boolean isBalanced(TreeNode root) {
         if(root == null)

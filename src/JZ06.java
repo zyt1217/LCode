@@ -1,3 +1,5 @@
+import preDefine.ListNode;
+
 import java.util.ArrayList;
 
 public class JZ06 {

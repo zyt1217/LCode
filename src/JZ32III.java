@@ -1,3 +1,5 @@
+import preDefine.TreeNode;
+
 import java.util.*;
 
 public class JZ32III {

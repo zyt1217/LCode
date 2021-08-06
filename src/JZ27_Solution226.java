@@ -1,3 +1,5 @@
+import preDefine.TreeNode;
+
 public class JZ27_Solution226 {
     public TreeNode mirrorTree(TreeNode root) {
         if(root == null)
