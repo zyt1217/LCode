@@ -1,4 +1,4 @@
-package Array.deleteElement_doubleIndex;
+package Array.deleteElement_doublePoint;
 
 public class Solution27 {
     //双指针法

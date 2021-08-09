@@ -1,4 +1,4 @@
-package Array.doubleIndex;
+package Array.doublePoint;
 
 public class Solution977 {
     public int[] sortedSquares(int[] nums) {

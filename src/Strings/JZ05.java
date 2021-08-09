@@ -1,3 +1,5 @@
+package Strings;
+
 public class JZ05 {
     public static void main(String[] args){
         String s = "We are here";

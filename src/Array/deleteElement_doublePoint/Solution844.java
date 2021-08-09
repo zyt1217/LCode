@@ -1,4 +1,4 @@
-package Array.deleteElement_doubleIndex;
+package Array.deleteElement_doublePoint;
 
 public class Solution844 {
     public static void main(String[] args){
