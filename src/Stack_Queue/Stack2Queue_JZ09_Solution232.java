@@ -1,6 +1,8 @@
+package Stack_Queue;
+
 import java.util.Stack;
 
-public class JZ09_Solution232 {
+public class Stack2Queue_JZ09_Solution232 {
 
 }
 
