@@ -1,3 +1,5 @@
+package Strings;
+
 import java.util.Locale;
 
 public class JZ58I_Solution151 {

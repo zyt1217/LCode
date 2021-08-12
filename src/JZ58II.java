@@ -22,4 +22,34 @@ public class JZ58II {
         return s.substring(n) + s.substring(0,n);
     }
 
+    public String reversLeftWords2(String s, int n){
+        char[] schar = s.toCharArray();
+        int p1 = 0, p2 = n-1;
+        while (p1 < p2){
+            char tmp = schar[p1];
+            schar[p1] = schar[p2];
+            schar[p2] = tmp;
+            p1 ++;
+            p2 --;
+        }
+        p1 = n; p2 = schar.length -1;
+        while (p1 < p2){
+            char tmp = schar[p1];
+            schar[p1] = schar[p2];
+            schar[p2] = tmp;
+            p1 ++;
+            p2 --;
+        }
+
+        p1 = 0; p2 = schar.length-1;
+        while (p1 < p2){
+            char tmp = schar[p1];
+            schar[p1] = schar[p2];
+            schar[p2] = tmp;
+            p1 ++;
+            p2 --;
+        }
+
+        return String.valueOf(schar);
+    }
 }
