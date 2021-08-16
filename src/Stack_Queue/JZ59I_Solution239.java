@@ -1,3 +1,5 @@
+package Stack_Queue;
+
 import java.util.*;
 
 public class JZ59I_Solution239 {
@@ -43,21 +45,26 @@ public class JZ59I_Solution239 {
 
         int[] ans = new int[nums.length - k + 1];
         Deque<Integer> deque = new LinkedList<>();
+        //模拟队列，队列滑动的过程也可以得到最大值
+        //单调队列，只维护最大值
+        //pop(value)：如果窗口移除的元素value等于单调队列的出口元素，那么队列弹出元素，否则不用任何操作
+        //push(value)：如果push的元素value大于入口元素的数值，那么就将队列入口的元素弹出，直到push元素的数值小于等于队列入口元素的数值为止
         for(int i = 0; i < k; i++){
-            while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()])
+            while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()])
                 deque.pollLast();
             deque.offerLast(i);
         }
-        ans[0] = nums[deque.peek()];
+        ans[0] = nums[deque.peekFirst()];
         for (int i = k; i < nums.length; ++i) {
-            while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
+            //对于窗口滑动后新加入的元素，保证队列的单调性，在等于时，必须不能向前移除，因为等于的元素也是最大值队列中的一个，保持等于元素的有序
+            while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
                 deque.pollLast();
             }
             deque.offerLast(i);
-            while (deque.peek() <= i - k) {
+            while (deque.peekFirst() ==i - k) {
                 deque.poll();
             }
-            ans[i - k + 1] = nums[deque.peek()];
+            ans[i - k + 1] = nums[deque.peekFirst()];
         }
         return ans;
     }
