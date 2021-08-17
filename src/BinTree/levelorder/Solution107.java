@@ -1,11 +1,11 @@
+package BinTree.levelorder;
+
 import preDefine.TreeNode;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-public class JZ32II_Solution102 {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+public class Solution107 {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> ans = new LinkedList<>();
         if(root == null)
             return ans;
@@ -19,7 +19,7 @@ public class JZ32II_Solution102 {
                 levelans.add(temp.val);
                 levelque.add(temp);
             }
-            ans.add(levelans);
+            ans.add(0, levelans);
             while (!levelque.isEmpty()){
                 if(levelque.peek().left != null){
                     queue.offer(levelque.peek().left);
