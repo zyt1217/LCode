@@ -34,4 +34,25 @@ public class JZ32II_Solution102 {
         }
         return ans;
     }
+    public List<List<Integer>> levelOrder1(TreeNode root) {
+        List<List<Integer>> ans = new LinkedList<>();
+        if(root == null)
+            return ans;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            List<Integer> levelans= new LinkedList<>();
+            int size = queue.size();
+            for(int i = 0; i < size; i++){
+                TreeNode temp = queue.poll();
+                levelans.add(temp.val);
+                if(temp.left != null)
+                    queue.offer(temp.left);
+                if(temp.right != null)
+                    queue.offer(temp.right);
+            }
+            ans.add(levelans);
+        }
+        return ans;
+    }
 }

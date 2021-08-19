@@ -1,3 +1,5 @@
+package BinTree;
+
 import preDefine.TreeNode;
 
 public class JZ27_Solution226 {
