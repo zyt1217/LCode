@@ -2,21 +2,10 @@ import java.util.*;
 
 public class test {
 
-    private static String s = "abba";
-    public static void main(String[] arg){
-//        test t = new test();
-//        int a = t.lengthOfLongestSubstring(s);
-//        System.out.println(t.lengthOfLongestSubstring(s));
-//        System.out.println(brackets(""));
 
-//        Random rand = new Random(104567);
-//        double x = 0.4;
-//        for(int i = 0;i<10;i++){
-//            double a =35.80  -x+2*x*(0.01*rand.nextInt(100));
-//            System.out.println(a);
-//        }
-        String s = "1234567";
-        System.out.print(s.substring(7,8));
+    String s = "123 456 7";
+    public static void main(String[] arg){
+
 
     }
 
@@ -77,6 +66,37 @@ public class test {
             ans[i] = brackets(strings[i]);
         }
         return ans;
+    }
+
+
+
+    public int del_space(String buf) {
+        int ans = 0;
+        for (int i = 0; i < buf.length(); i++) {
+            if (buf.charAt(i) == ' ') {
+                ans++;
+                buf = buf.substring(0, i) + buf.substring(i + 1);
+            }
+            //System.out.println(buf);
+        }
+        return ans;
+    }
+//        String[] strings = buf.split(" ");
+//        StringBuilder tmp = new StringBuilder();
+//        for (String s : strings){
+//            tmp.append(s);
+//        }
+//        buf = String.valueOf(tmp);
+//        return strings.length -1;
+//    }
+
+}
+
+class a{
+    public static void main(String[] args){
+        test t = new test();
+        t.del_space(t.s);
+        System.out.print(t.s);
     }
 
 }
