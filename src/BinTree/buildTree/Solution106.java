@@ -1,8 +1,6 @@
-package BinTree.buildtree;
+package BinTree.buildTree;
 
 import preDefine.TreeNode;
-
-import java.util.Arrays;
 
 public class Solution106{
 

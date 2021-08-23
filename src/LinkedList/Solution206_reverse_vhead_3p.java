@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList;
 import preDefine.ListNode;
 
 public class Solution206_reverse_vhead_3p {

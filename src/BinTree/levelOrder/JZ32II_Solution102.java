@@ -1,4 +1,4 @@
-package BinTree.levelorder;
+package BinTree.levelOrder;
 
 import preDefine.TreeNode;
 

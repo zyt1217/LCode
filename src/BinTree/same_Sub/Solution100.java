@@ -1,4 +1,4 @@
-package BinTree.same_sub;
+package BinTree.same_Sub;
 
 import preDefine.TreeNode;
 

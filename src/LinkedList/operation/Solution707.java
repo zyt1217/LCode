@@ -1,4 +1,4 @@
-package linkedList.operation;
+package LinkedList.operation;
 
 import preDefine.ListNode;
 

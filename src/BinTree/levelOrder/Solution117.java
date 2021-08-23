@@ -1,4 +1,4 @@
-package BinTree.levelorder;
+package BinTree.levelOrder;
 
 public class Solution117 {
     //O(1)空间
