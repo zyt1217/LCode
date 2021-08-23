@@ -1,4 +1,4 @@
-package BinTree;
+package BinTree.path;
 
 import preDefine.TreeNode;
 
