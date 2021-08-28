@@ -5,9 +5,23 @@ public class test {
 
     String s = "123 456 7";
     public static void main(String[] arg){
+        Scanner in = new Scanner(System.in);
+        // 从键盘接收数据
+        // next方式接收字符串
+        System.out.println("next方式接收：");
+        // 判断是否还有输入
+        if(in.hasNext()){
+            System.out.println(in.nextLine());
+            in.nextLine();
+            String a = in.nextLine();
+            System.out.println(a);
+        }
 
-
+        in.close();
     }
+
+
+
 
     public int lengthOfLongestSubstring(String s) {
         if(s.length()==0){

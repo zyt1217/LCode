@@ -1,3 +1,5 @@
+package BinTree;
+
 import preDefine.TreeNode;
 
 import java.util.ArrayList;
@@ -21,18 +23,21 @@ public class JZ68II_Solution236 {
         System.out.print(lowestCommonAncestor(root,root.left.left.left,root.left).val);
     }
 
-    public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    //对于公共祖先而言，p q两点要么分布于它的左右子树，那么此时返回改点，要么分布于它的一枝，此时返回它本身或者某一子节点
+    //使用后续遍历本身是一种回溯，向上返回该枝是否有一节点p q
+    public TreeNode lowestCommonAncestor_recur_postorder(TreeNode root, TreeNode p, TreeNode q) {
         if(root == p || root == q || root == null)
             return root;
-        TreeNode left = lowestCommonAncestor(root.left,p,q);
-        TreeNode right = lowestCommonAncestor(root.right,p,q);
+        TreeNode left = lowestCommonAncestor_recur_postorder(root.left,p,q);
+        TreeNode right = lowestCommonAncestor_recur_postorder(root.right,p,q);
         if(left != null && right != null)
             return root;
-        if(left == null && right != null)
+        else if (left == null && right != null)
             return right;
-        if(left != null && right == null)
+        else if (left != null && right == null)
             return left;
-        return null;
+        else
+            return null;
     }
 
     public static TreeNode lowestCommonAncestor_(TreeNode root, TreeNode p, TreeNode q) {
@@ -76,4 +81,9 @@ public class JZ68II_Solution236 {
         }else
             return null;
     }
+
+
+
+
+
 }
