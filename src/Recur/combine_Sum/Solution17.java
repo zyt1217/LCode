@@ -1,4 +1,4 @@
-package Recur;
+package Recur.combine_Sum;
 
 import sun.awt.image.ImageWatched;
 
