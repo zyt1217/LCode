@@ -42,8 +42,6 @@ public class Solution216 {
             return;
         }
 
-
-
         for(int num = startNum; num <= max; num ++){
             path.add(num);
             sum += num;
@@ -52,12 +50,5 @@ public class Solution216 {
             path.remove(path.size() - 1);
         }
     }
-
 }
 
-class test{
-    public static void main(String[] args){
-        Solution216 s = new Solution216();
-        s.combinationSum3(3,9);
-    }
-}
