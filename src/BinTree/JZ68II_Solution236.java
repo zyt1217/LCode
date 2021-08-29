@@ -20,7 +20,7 @@ public class JZ68II_Solution236 {
         root.left.left = new TreeNode(-2);
         root.left.right = new TreeNode(4);
         root.left.left.left = new TreeNode(8);
-        System.out.print(lowestCommonAncestor(root,root.left.left.left,root.left).val);
+        System.out.print(lowestCommonAncestor_(root,root.left.left.left,root.left).val);
     }
 
     //对于公共祖先而言，p q两点要么分布于它的左右子树，那么此时返回改点，要么分布于它的一枝，此时返回它本身或者某一子节点

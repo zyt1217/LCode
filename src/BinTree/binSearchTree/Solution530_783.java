@@ -2,7 +2,7 @@ package BinTree.binSearchTree;
 
 import preDefine.TreeNode;
 
-public class Solution530 {
+public class Solution530_783 {
 
     public int getMinimumDifference(TreeNode root) {
         return (int)dfs(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
