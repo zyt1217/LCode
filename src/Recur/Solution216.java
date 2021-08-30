@@ -9,6 +9,7 @@ public class Solution216 {
     public List<List<Integer>> ans;
     public List<Integer> path;
     public int k, n;
+
     public List<List<Integer>> combinationSum3(int k, int n) {
         this.k = k;
         this.n = n;

@@ -5,6 +5,43 @@ import sun.awt.image.ImageWatched;
 import java.util.*;
 
 public class Solution17 {
+    char[][] nums = {{'a','b','c'},
+            {'d','e','f'},
+            {'g','h','i'},
+            {'j','k','l'},
+            {'m','n','o'},
+            {'p','q','r','s'},
+            {'t','u','v'},
+            {'w','x','y','z'}};
+    List<String> ans;
+    StringBuilder path;
+    String digits;
+    public List<String> letterCombinations(String digits) {
+        this.digits = digits;
+        ans = new ArrayList<>();
+        if(digits.length() == 0)
+            return ans;
+        path = new StringBuilder();
+        recur(0);
+        return ans;
+    }
+
+    public void recur(int startindex){
+        if(startindex == digits.length()){
+            ans.add(new String(path));
+            return;
+        }
+        int num = digits.charAt(startindex) - '2';
+        for(int i = 0; i < nums[num].length; i++){
+            path.append(nums[num][i]);
+            recur(startindex + 1);
+            path.deleteCharAt(startindex);
+        }
+    }
+
+
+
+
 
     public List<String> letterCombinations2(String digits) {// 10ms
         List<String> ans = new LinkedList<>();
