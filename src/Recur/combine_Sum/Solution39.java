@@ -1,6 +1,7 @@
 package Recur.combine_Sum;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution39 {
@@ -13,6 +14,7 @@ public class Solution39 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         ans = new ArrayList<>();
         this.candidates = candidates;
+        Arrays.sort(candidates);
         this.target = target;
         path = new ArrayList<>();
         recur(0, 0);
@@ -25,7 +27,7 @@ public class Solution39 {
         }
         if(sum > target)
             return;
-        for(int i = index; i < candidates.length ;i++){
+        for(int i = index; i < candidates.length && candidates[i] <= target - sum  ;i++){
             path.add(candidates[i]);
             sum += candidates[i];
             recur(i, sum);
