@@ -1,4 +1,4 @@
-package Recur;
+package Recur.stringCut;
 
 import java.util.ArrayList;
 import java.util.Deque;
