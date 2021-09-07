@@ -1,3 +1,5 @@
+package DP;
+
 public class JZ63_Solution121 {
     public int maxProfit(int[] prices) {
         //dp[i]表示i天的最大利润

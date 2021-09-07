@@ -106,11 +106,26 @@ public class test {
 
 }
 
+class father{
+    father(){
+        //System.out.println("father");
+    }
+    void display(){
+        System.out.println("Father's display");
+    }
+}
+class son extends father{
+    son(){
+        System.out.println("son");
+    }
+    void display(){
+        System.out.println("Son's display");
+    }
+}
+
 class a{
     public static void main(String[] args){
-        test t = new test();
-        t.del_space(t.s);
-        System.out.print(t.s);
+        father f = new son();
+        f.display();
     }
-
 }

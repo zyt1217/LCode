@@ -1,3 +1,5 @@
+package DP;
+
 public class JZ10_Solution70 {
     public int fib(int n) {
         int n0 = 0 , n1 =1;
